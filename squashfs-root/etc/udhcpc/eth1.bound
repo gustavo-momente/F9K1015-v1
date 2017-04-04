@@ -1,0 +1,22 @@
+#!/bin/sh
+eval `flash get IP_ADDR`
+if [ "`echo $ip | cut -d . -f 3`" = "`echo $IP_ADDR | cut -d . -f 3`" ]; then
+	flash set IP_ADDR 10.10.10.1
+	flash set SUBNET_MASK 255.255.255.0
+	flash set DHCP_CLIENT_START 10.10.10.2
+	flash set DHCP_CLIENT_END 10.10.10.200
+	ifconfig br0 10.10.10.1 netmask 255.255.255.0
+	dhcpd.sh br0
+	rm -rf /tmp/flash.inc
+	killall -USR1 webs
+fi
+[ -n "$broadcast" ] && BROADCAST="broadcast $broadcast"
+[ -n "$subnet" ] && NETMASK="netmask $subnet"
+ifconfig $interface $ip $BROADCAST $NETMASK
+route del default
+route add default gw $router dev $interface
+> /etc/resolv.conf
+if [ "$dns" ]; then
+	for i in $dns; do echo nameserver $i >> /etc/resolv.conf; done
+fi
+ipup.sh

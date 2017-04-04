@@ -1,0 +1,365 @@
+/* CSS Document */
+html {
+	height:100%;
+	margin:0;
+	padding:0;
+	}
+body {
+	margin:0;
+	padding:0;
+	background:url(images/bg.jpg) repeat-y center #e9e9e9;
+	height:100%;
+	}
+body, input {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	}
+img {
+	margin:0;
+	padding:0;
+	border:0;
+	}
+a {
+	text-decoration:none;
+	}
+.content {
+	width:678px;
+	margin:auto;
+	height:100%;
+	}
+.content .wrapper {
+	width:624px;
+	background-color:#ffffff;
+	height:100%;
+	}
+
+.content .dialog {
+	width:300px;
+	background-color:#ffffff;
+	height:200px;
+	}
+
+.wrapper {
+	margin:auto;
+	}
+.intro_copy {
+	margin:auto;
+	font-weight:bold;
+	clear:both;
+	padding:10px 0;
+	font-size:115%;
+	}
+.intro_copy img {
+	margin-right:20px;
+	}
+.left {
+	float:left;
+	}
+.right {
+	float:right;
+	}
+.btnleft {
+	float:left;
+	margin-left:15px;
+	color:#FFF;
+	padding-top:0.7em;
+	}
+.btnright {
+	float:right;
+	margin-right:15px;
+	color:#FFF;
+	padding-top:0.7em;
+	}
+.txtlt {
+	text-align:left;
+	}
+.txtrt {
+	text-align:right;
+	}
+.txtcntr {
+	text-align:center;
+	}
+.networklistrow {
+	height:30px;
+	padding:10px 10px 0px 10px;
+	border-top:1px solid #cccccc;
+	cursor:pointer;
+	position:relative;
+	}
+.networklistrow.first {
+	border-top:none;
+	}
+.activerow {
+	background:url(images/blu_hilite_bg.jpg);
+	}
+.indent {
+	padding-left:5px;
+	}
+.bars {
+	width:20px;
+	}
+.default_input {
+	width:99%;
+	/*font-style:italic;
+ * 	color:#CCCCCC;*/
+	font-size:120%;
+	height:25px;
+	}
+.ipaddr_input {
+	width:15%;
+	/*font-style:italic;
+ * 	color:#CCCCCC;*/
+	font-size:120%;
+	height:25px;
+	}
+	
+.supportrow {
+	 border-top:1px solid #CCCCCC;
+	 padding:10px 0 10px 20px;
+	 font-size:120%;
+	 }
+.prod_info {
+	color:#3399FF;
+	}
+.button {
+	padding-top:1.7em;
+	}
+#header {
+	font-size:80%;
+	height:65px;
+	background:url(images/hdr_bg.jpg);
+	}
+#mainlogo {
+	margin-left:0px;
+	margin-top:0px;
+	margin-bottom:auto;
+	width:165px;
+	height:60px;
+	background-image:url(images/BELKIN.jpg);
+	}
+#main {
+	margin-top:30px;
+	padding:0 20px;
+	background-color:#FFFFFF;
+	}
+#vlhdrtxt {
+	 padding:26px 20px;
+	 font-size:150%;
+	 color:#666666;
+	 }
+#english2 {
+	padding-right:5px;
+	margin-top:5px;
+	margin-bottom:20px;
+	}
+#english {
+	padding-right:20px;
+	margin-top:5px;
+	margin-bottom:20px;
+	color:#666666;
+	background:url(images/English.jpg) no-repeat 83%;
+	}
+#videolink {
+	width:282px;
+	height:457px;
+	background-image:url(images/adapter.jpg);
+	margin:20px auto auto auto;
+	}
+#networklist {
+	margin:auto;
+	border:1px solid;
+	margin-bottom: 5px;
+	font-size:1.2em;
+	/* Scroll need */
+	height: 200px; /* Show 5 entries. */
+	overflow: auto;
+	position: relative;
+	}
+#proddetails {
+	font-size:1.45em;
+	}
+#password {
+	width:99%;
+	display:none;
+	font-size:120%;
+	height:25px;
+	}
+#setupcomplete {
+	width:215px;
+	height:235px;
+	background:url(images/complete_check.jpg);
+	margin:auto;
+	}
+#notice {
+	height:61px;
+	background:url(images/notice.jpg) no-repeat;
+	padding-top:0px;
+	padding-left:75px;
+	font-size:1.5em;
+	}
+#saveacopy {
+	width:270px;
+	height:49px;
+	background:url(images/bttn_Save_a_copy.jpg) no-repeat;
+	margin:10px 0 20px 0;
+	padding-top:10px;
+	padding-left:12px;
+	font-size:1.3em;
+	font-weight:bold;
+	}
+#saveacopy a {
+	color:#ffffff;
+	}
+#footer {
+	text-align:center;
+	background:url(images/footer_bg.jpg) repeat-x #fff;
+	font-size:1.5em;
+	font-weight:bold;
+	white-space:nowrap;
+	min-height:100px;
+	}
+#footer .wrapper a {
+	color:#fff;
+	}
+#footer #getstarted {
+	display:table-cell;
+	vertical-align:middle;
+	width:161px;
+	height:59px;
+	background:url(images/bttn_Get_Started_1.jpg) no-repeat;
+	font-weight:bold;
+	}
+#footer #spacer_getstarted {
+	width:161px;
+	height:25px;
+	}
+#footer #next {
+	width:89px;
+	height:45px;
+	background:url(images/bttn_Next_1.jpg) no-repeat;
+	}
+#footer #next_de {
+        width:310px;
+        height:45px;
+        background:url(images/bttn_Save_a_copy.jpg) no-repeat;
+        }
+#footer #idontsee {
+	
+	width:460px;
+	height:45px;
+	background:url(images/bttn_I_dont_see_my_network_1.jpg) no-repeat;
+	}
+#footer #spacer_idontsee {
+	width:600px;
+	height:25px;
+	}
+#footer #cancel {
+	width:115px;
+	height:45px;
+	background:url(images/bttn_Cancel_1.jpg) no-repeat;
+	}
+#footer #closewin {
+	width:198px;
+	height:45px;
+	background:url(images/bttn_Close_Window_1.jpg) no-repeat;
+	}
+#footer #cancelsetup {
+	width:120px;
+	height:45px;
+	background:url(images/bttn_Cancel_setup_1.jpg) no-repeat;
+	}
+#footer #StartOver {
+	/*padding-top:45px;*/
+	width:120px;
+	height:45px;
+	background:url(images/bttn_Cancel_setup_1.jpg) no-repeat;
+	}
+
+/* ARC */
+#commonBtn {
+	width:310px;
+	height:49px;
+	background:url(images/bttn_Save_a_copy.jpg) no-repeat;
+	padding-top:10px;
+	font-size:1.3em;
+	font-weight:bold;
+	text-align: center;
+	}
+#commonlongBtn {
+	width: 310px;
+	height:49px;
+	background:url(images/bttn_Save_a_copy.jpg) no-repeat;
+	padding-top:14px;
+	font-size:1em;
+	font-weight:bold;
+	text-align: center;
+	}
+.intro_tips {
+	margin:auto;
+	clear:both;
+	padding:10px 0;
+	font-size:100%;
+	}
+#tophdrtxt {
+	 padding:12px 60px;
+	 font-size:150%;
+	 color:#666666;
+	 }
+#misc {
+	margin:auto;
+	padding:0 20px;
+	background-color:#FFFFFF;
+	}
+
+#language_icon a
+{
+	padding-right: 5px;
+	padding-top: 3px;
+	cursor: pointer;
+}
+
+#overlay {
+	visibility: hidden;
+	position: absolute;
+	margin:-200px 0px 0px -270px;
+	top: 50%;
+	left: 50%;
+	width:500px;
+	font-family: Verdana,Arial,sans-serif; 
+	font-size: 1.1em;
+	background-color: #fff;
+	border:1px solid #000;
+	padding:15px;
+	text-align:center;
+	z-index: 100;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#overlay div  { 
+	border: 1px solid #aaaaaa;
+	background: #cccccc ; 
+	color: #222222; 
+	font-weight: bold; 
+	padding:10px;
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+#bg {
+	display: none;
+	position: absolute;
+	left: 0pt;
+	top: 0pt;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 98;
+	-moz-opacity: 0.7;
+	opacity: .30;
+	filter: alpha(opacity = 70);
+}
+
+

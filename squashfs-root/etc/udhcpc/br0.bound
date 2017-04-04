@@ -1,0 +1,22 @@
+#!/bin/sh
+[ -n "$broadcast" ] && BROADCAST="broadcast $broadcast"
+[ -n "$subnet" ] && NETMASK="netmask $subnet"
+ifconfig $interface $ip $BROADCAST $NETMASK
+route del default
+if [ "$router" ]; then
+route add default gw $router dev $interface
+echo $router > /var/br0_gw
+else
+echo $serverid > /var/br0_gw
+fi
+#eval `flash get INIC_WPS_ENABLE`
+eval `flash get WPS_ENABLE`
+#eval `flash get CROSS_BAND`
+#eval `flash get CROSS_BAND_SUPPORT`
+
+if [ $WPS_ENABLE = 1 ]; then wps_init.sh; fi
+BSSID=`cat /proc/wlan0-vxd/mib_bssdesc |grep bssid | tr -s " " |cut -f 3 -d " "`
+SSID=`cat /proc/wlan0-vxd/mib_bssdesc |grep ssid |grep -v bssid |grep -v ssidlen| tr -s " " |cut -f 3 -d " "`
+CHANNEL=`cat /proc/wlan0-vxd/mib_bssdesc |grep channel | tr -s " " |cut -f 3 -d " "`
+RSSI=`cat /proc/wlan0-vxd/mib_bssdesc |grep rssi | tr -s " " |cut -f 3 -d " "`
+logger "Join Wifi network <$SSID, $BSSID, $CHANNEL, $RSSI>"

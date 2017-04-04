@@ -1,0 +1,48 @@
+#!/bin/sh
+#iwpriv wlan0 write_mem dw,b8000040,1,00000006
+#iwpriv wlan0 write_mem dw,b8000044,1,000036db
+#iwpriv wlan0 write_mem dw,b8003500,1,ffff8387
+#iwpriv wlan0 write_mem dw,b8003508,1,00005c44
+#iwpriv wlan0 write_mem dw,b800350c,1,00001404
+
+ifconfig lo 127.0.0.1 netmask 255.255.255.255
+mount -t ramfs ramfs /var
+DIRS="l2tp usr/share/udhcpc ppp udhcpc etc/udhcpc etc/udhcpd dnrd run lib/misc linuxigd tmp log dev/pts lock"
+for dir in $DIRS ; do
+mkdir -p /var/$dir
+done
+FILES="hosts resolv.conf udhcpc/resolv.conf usr/share/udhcpc/resolv.conf etc/udhcpc/resolv.conf ppp/options "
+for file in $FILES ; do
+> /var/$file
+done
+ln -s /bin/ipup.sh /etc/ppp/ip-up
+ln -s /etc/resolv.conf /etc/ppp/resolv.conf
+mount -t ramfs ramfs /dev
+mknod -m666 ${ROMFSDIR}/dev/mtdblock0 b 31 0
+mknod -m666 ${ROMFSDIR}/dev/mtdblock1 b 31 1
+mknod -m666 /dev/kmem c 1 2
+mknod -m666 /dev/null c 1 3
+mknod -m666 /dev/random c 1 8
+mknod -m666 /dev/urandom c 1 9
+mknod -m666 /dev/ptmx c 5 2
+mknod -m666 /dev/ttyS0 c 4 64
+mknod -m666 /dev/console c 5 1
+mknod -m666 /dev/flash0 c 200 0
+mknod -m666 /dev/rdm0 c 254 0
+mknod -m666 /dev/ptyp0 c 2 0
+mknod -m666 /dev/ttyp0 c 3 0
+mknod -m666 /dev/ttyS1 c 4 65
+mknod -m666 /dev/ppp c 108 0
+mknod -m666 /dev/ptyp1 c 2 1
+mknod -m666 /dev/ptyp2 c 2 2
+mknod -m666 /dev/ptyp3 c 2 3
+mknod -m666 /dev/ttyp1 c 3 1
+mknod -m666 /dev/ttyp2 c 3 2
+mknod -m666 /dev/ttyp3 c 3 3
+mkdir -p /dev/pts
+for minor in 0 1 2 3 4 5 6 7 8 9 10 ; do
+mknod -m666 /dev/pts/$minor c 136 $minor
+done
+syslogd -C
+reload &
+init.sh

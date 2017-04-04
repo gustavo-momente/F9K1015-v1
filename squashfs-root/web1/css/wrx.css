@@ -1,0 +1,375 @@
+/* CSS Document */
+body {
+	margin:0;
+	padding:0;
+	background:url(../images/screen-bkgnd_desktop.png) repeat-y center #e1ded6;
+	height:100%;
+	}
+.networklistrow {
+	min-height:38px;
+	padding:10px 10px 10px 10px;
+	border-top:none;
+	cursor:pointer;
+	position:relative;
+	}
+.networklistrow.first {
+	border-top:none;
+	}
+.networklistrow:hover {
+	background-color:#73d44a;
+	color:#fff;
+	}
+.networklistrow .name {
+	margin-bottom:4px;
+}
+.networklistrow .bars {
+	height:18px;
+	width:18px;
+	margin:0 0 5px 6px;
+	padding:0 0 0 24px;
+}
+.four.bars {
+	background:url(../images/icon-Wi-Fi_desktop-sm_4-4.png) no-repeat 0px 3px;
+}
+.three.bars {
+	background:url(../images/icon-Wi-Fi_desktop-sm_3-4.png) no-repeat 0px 3px;
+}
+.two.bars {
+	background:url(../images/icon-Wi-Fi_desktop-sm_2-4.png) no-repeat 0px 3px;
+}
+.one.bars {
+	background:url(../images/icon-Wi-Fi_desktop-sm_1-4.png) no-repeat 0px 3px;
+}
+.networklistrow:hover .four.bars {
+	background:url(../images/icon-Wi-Fi_desktop-sm_4-4_white.png) no-repeat 0px 3px;
+}
+.networklistrow:hover .three.bars {
+	background:url(../images/icon-Wi-Fi_desktop-sm_3-4_white.png) no-repeat 0px 3px;
+}
+.networklistrow:hover .two.bars {
+	background:url(../images/icon-Wi-Fi_desktop-sm_2-4_white.png) no-repeat 0px 3px;
+}
+.networklistrow:hover .one.bars {
+	background:url(../images/icon-Wi-Fi_desktop-sm_1-4_white.png) no-repeat 0px 3px;
+}
+.lock {
+	position:relative;
+	width: 22px;
+	height: 18px;
+}
+.lock.locked {
+	background:url(../images/icon-Lock_desktop-sm.png) no-repeat 0px 4px;
+}
+.networklistrow:hover .lock.locked {
+	background:url(../images/icon-Lock_desktop-sm_white.png) no-repeat 0px 4px;
+}
+.networklistrow.usehidden {
+	 border-top:1px solid #555555;
+	 border-color:black;
+}
+.networklistrow.usehidden.first {
+	 border-bottom:1px solid;
+	 border-top:none;
+}
+.bars {
+	width:20px;
+}
+#loading-img {
+	position:relative;
+	width: 48px;
+	height: 48px;
+	margin:36px auto 0 ;
+	background:url(../images/loading.gif) no-repeat center center;
+	background-size:48px 48px;
+}
+#header {
+	background-color:#eceae4;
+	max-width:708px;
+	margin:auto;
+	margin-bottom: 16px;
+}
+#header h1 {
+	font-size:14px;
+	color: #666;
+	float:right;
+	padding: 30px 0px 24px 16px;
+	margin-bottom:0;
+}
+#header a {
+	margin-bottom: 0;
+}
+#main {
+	margin:auto;
+	max-width:708px;
+	padding:20px 0;
+	background-color:#FFFFFF;
+	margin-bottom:16px;
+}
+#networklist {
+	margin:auto;
+	border:1px solid;
+	margin-bottom:25px;
+	font-size:1.2em;
+}
+#actions {
+	background:url() repeat-x #fff;
+	max-width:708px;
+	margin:auto;
+	margin-bottom:24px;
+	}
+#actions p {
+	margin: 0 0 0.5em 0;
+}
+#actions select {
+	margin: 0 0 10px;
+}
+#actions a{
+	margin: 11px 100px 0 0;
+}
+#actions a.button{
+	margin: 0px 0;
+}
+#copyright{
+	color: rgb(85, 85, 85);
+	font-size:10px;
+}
+.mtop24 { /* For the copyright on the setup pages */
+	margin-top:24px;
+}
+.fix-bottom {
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	height:30px;
+	width:100%;
+}
+#logo {
+	width:180px;
+	height:70px;
+	margin:0;
+	padding:0;
+	background:url(../images/logo-Belkin_PIP_desktop.png) no-repeat;
+	background-size:180px 70px;
+}
+#productPhoto {
+	width:307px;
+	height:307px;
+	margin:0 0 26px;
+	padding:0;
+	background:url(../images/WRX-N300-DB_range-extender.png) no-repeat;
+}
+
+#main .password {
+	width:100%;
+}
+.controls {
+	width:358px;
+	margin: auto;
+}
+input[type="text"] {
+	/* EDX Remove*/
+	/*margin: 57px auto;
+	width:358px;*/
+}
+.warning-icon {
+	margin:0 0 70px 0;
+	padding:0 0 0 74px;
+	background:url(../images/notice.jpg) no-repeat 0px 5px;
+}
+.password-warning {
+	color:#555;
+	font-weight:normal;
+}
+a.support {
+	font-size:21px;
+}
+.success-icon {
+	margin:0 0 35px 0;
+	padding:0 0 0 83px;
+	background:url(../images/checkmark_desktop.png) no-repeat 0px 5px;
+}
+#completed-links a{
+	margin-bottom: 24px;
+}
+
+.nav-links {
+	padding-right:12px;
+	border-right: 1px solid;
+}
+.nav-links a {
+	cursor: pointer;
+	color: rgb(85, 85, 85);
+	font-weight:700;
+	display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;
+	padding-bottom:8px;
+}
+.nav-links a.current {
+	color:#68c643;
+}
+.nav-links a:hover {
+	color:#54af2d;
+}
+
+.nav-links .subnav {
+	padding-left:20px;
+}
+
+.nav-links .router-settings li {
+	padding-left:1em;
+}	
+
+#status {
+	padding-left:12px;
+}
+
+#status tr td:first-child {
+	width:35%;
+}
+#status tr td {
+	line-height:23px;
+}
+#status tr td img {
+	padding: 11px 0;
+}
+.DBCaret {
+	margin-right: 19px;
+	margin-left:10px;
+	float: right;
+}
+.router-link-caret {
+	padding-right:22px;
+}
+/* Media query for phone view */	
+@media only screen and (max-width:767px){
+	body {
+		background:url() repeat-y center #fff;
+	}
+	#actions {
+		background:url() repeat-x #fff;
+	}
+	#actions a{
+		margin: 5px 10px 0 0;
+	}
+
+	#header h1 {
+		font-size:12px;
+		color: #666;
+		float:right;
+		padding: 16px 12px 12px 16px;
+		margin-bottom:0;
+	}
+	#header .columns:first-child {
+		padding:0;
+	}
+	#logo {
+		width:76px;
+		height:29px;
+		background:url(../images/logo-Belkin_PIP_mobile.png) no-repeat 4px 5px;
+		background-size: 76px 29px;
+	}
+	#productPhoto {
+		width:154px;
+		height:154px;
+		margin:0 0 10px;
+		padding:0;
+		background:url(../images/WRX-N300-DB_range-extender_mobile.png) no-repeat;
+	}
+	.controls{
+		width:100%;
+	}
+	.password-warning {
+		color:#555;
+		font-size:16px;
+		font-size:1em;
+	}
+	.warning-icon {
+		margin:0 0 70px 0;
+		padding:0 0 0 38px;
+		background:url(../images/notice2.jpg) no-repeat 0px 5px;
+	}
+	.success-icon {
+		margin:0 0 36px 0;
+		padding:0 0 0 41px;
+		background:url(../images/checkmark_mobile.png) no-repeat 0px 5px;
+	}
+	.networklistrow {
+		border-top:1px solid #cccccc;
+	}
+	.fix-bottom{
+		height:45px;
+	}
+	#status {
+		padding-right:10px;
+	}
+	.nav-links {
+		padding-right:12px;
+		border-right: 0;
+	}
+}
+.intro_copy {
+        margin:auto;
+        font-weight:bold;
+        clear:both;
+        padding:10px 0;
+        font-size:115%;
+        }
+.intro_copy img {
+        margin-right:20px;
+        }
+
+#overlay {
+        visibility: hidden;
+        position: absolute;
+        margin:-200px 0px 0px -270px;
+        top: 50%;
+        left: 50%;
+        width:500px;
+        font-family: Verdana,Arial,sans-serif;
+        font-size: 1.1em;
+        background-color: #fff;
+        border:1px solid #000;
+        padding:15px;
+        text-align:center;
+        z-index: 100;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+}
+
+#overlay div  {
+        border: 1px solid #aaaaaa;
+        background: #cccccc ;
+        color: #222222;
+        font-weight: bold;
+        padding:10px;
+
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+}
+.intro_tips {
+        margin:auto;
+        clear:both;
+        padding:10px 0;
+        font-size:100%;
+        }
+/* EDX Add*/
+.input_span {
+	margin: 32px auto;
+}
+.width_full {
+	width:100%
+}
+table.minimal_1{-moz-border-radius:0px;-webkit-border-radius:0px;-o-border-radius:0px;border-radius:0px;border:none;}
+table.minimal_1 thead{background:transparent;}
+table.minimal_1 thead tr th{text-align:left;padding:0;border-bottom:solid 1px #ddd;padding-bottom:4px;}
+table.minimal_1 thead tr th:first-child{border-left:none;}
+table.minimal_1 thead tr th:last-child{border-right:none;}
+table.minimal_1 tbody tr.even,table tbody tr.alt{background:transparent;}
+table.minimal_1 tbody tr td:first-child{width: 20%;}
+table.minimal_1.dashboard tbody tr td:first-child{width: 30%;}
+table.minimal_1 tbody tr{background:#fff;}
+table.minimal_1 tbody tr td{padding:0px;}
+.lang_pad {
+	padding: 26px 0 0 0;
+}

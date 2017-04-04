@@ -1,0 +1,66 @@
+.leftLink {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #003366; LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.top_nav {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #333333; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.section {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #ffffff; LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.body {
+	FONT: 11pt Arial,Helvetica,sans-serif; COLOR: #333333
+}
+.more {
+	FONT: bold 9pt Arial,Helvetica,sans-serif; COLOR: #000000; TEXT-DECORATION: none
+}
+.head_bold {
+	FONT-WEIGHT: bold; FONT-SIZE: 23px; COLOR: #000000; LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A {
+	COLOR: #6699FF; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.copy_1 {
+	FONT-SIZE: 11px; COLOR: #000000; LINE-HEIGHT: 14px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.copy_2 {
+	FONT-SIZE: 15px; COLOR: #003d79; LINE-HEIGHT: 14px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.submitBtn {
+	FONT-SIZE: 11px; BORDER-LEFT-COLOR: #cccccc; BORDER-BOTTOM-COLOR: #cccccc; COLOR: #333333; BORDER-TOP-COLOR: #cccccc; FONT-FAMILY: Arial; BACKGROUND-COLOR: #cccccc; BORDER-RIGHT-COLOR: #cccccc
+}
+.app_name {
+	FONT-SIZE: 22px; COLOR: #666666; FONT-FAMILY: Arial Regular, Sans-serif
+}
+.uptest {
+	FONT: bold 10pt Arial,Helvetica,sans-serif; TEXT-DECORATION: none
+}
+.test {
+	FONT: 10pt Arial,Helvetica,sans-serif; TEXT-DECORATION: none
+}
+.more_grey {
+	FONT: bold 9pt Arial,Helvetica,sans-serif; COLOR: #333333; TEXT-DECORATION: none
+}
+.wbody {
+	FONT: 9pt Arial,Helvetica,sans-serif; COLOR: #ffffff
+}
+.bbody {
+	FONT: 9pt Arial,Helvetica,sans-serif; COLOR: #000000
+}
+.connected {
+	FONT: bold 12px Arial, Sans-serif; COLOR: #0066ff
+}
+.disconnected {
+	FONT: bold 12px Arial, Sans-serif; COLOR: #990033
+}
+.status {
+	FONT-SIZE: 12px; COLOR: #333333; FONT-FAMILY: Arial Regular, Sans-serif
+}
+/*
+#header {
+        height:65px;
+        background:url(images/hdr_bg.jpg);
+        }
+*/

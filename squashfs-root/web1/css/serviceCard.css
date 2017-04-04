@@ -1,0 +1,39 @@
+.servCardInfo {margin:16px 0px 36px; }
+.servCardInfo div{border: solid 1px #ddd; }
+.servCardInfo img {height: 18px;}
+.servCardInfo .netInfo:first-child {border-bottom:solid 1px #555;}
+.servCardInfo span {color:#000;}
+
+.pad-w-img {
+	padding: 8px 0px 6px 43px;
+	margin-top: -1px;
+	border:none;
+}
+.pad-w-img.wifi {
+	background:url(../images/icon-Wi-Fi_desktop-lrg.png) no-repeat 10px 7px;
+	background-size:27px 18px;	
+}
+.pad-w-img.pass {
+	background:url(../images/icon-Password_desktop-lrg.png) no-repeat 10px 7px;
+	background-size:27px 18px;	
+}
+
+.freq-label {padding: 2px 10px; color:#555;}
+.tcenter {text-align:center;}
+.roundTop2 {
+	-moz-border-top-left-radius:2mm; -webkit-border-top-left-radius:2mm; -o-border-top-left-radius:2mm; border-top-left-radius:2mm;
+	-moz-border-top-right-radius:2mm; -webkit-border-top-right-radius:2mm; -o-border-top-right-radius:2mm; border-top-right-radius:2mm;
+}
+.roundUR {
+	-moz-border-top-right-radius:2mm; -webkit-border-top-right-radius:2mm; -o-border-top-right-radius:2mm; border-top-right-radius:2mm;
+}
+.roundBR {
+	-moz-border-bottom-right-radius:2mm; -webkit-border-bottom-right-radius:2mm; -o-border-bottom-right-radius:2mm; border-bottom-right-radius:2mm;
+}
+.roundBL {
+	-moz-border-bottom-left-radius:2mm; -webkit-border-bottom-left-radius:2mm; -o-border-bottom-left-radius:2mm; border-bottom-left-radius:2mm;
+}
+@media print
+  {
+  .button {display:none;}
+  }
