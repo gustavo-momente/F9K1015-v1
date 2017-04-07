@@ -1,0 +1,5 @@
+ash, basename, cat, chmod, cp, cut, date, echo, expr, grep, halt,
+head, ifconfig, init, ip, ipcalc, kill, killall, linuxrc, ln, logger,
+logread, ls, md5sum, mkdir, mknod, mount, pidof, ping, poweroff,
+ps, reboot, rm, route, sed, sh, sleep, syslogd, tail, tftp, tr, udhcpc,
+udhcpd, umount, vi, wc, wget
